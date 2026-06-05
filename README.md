@@ -20,6 +20,3 @@ Literasi terkadang sering dianggap remeh oleh sebagian masyarakat, namun tingkat
     Email: sanareveritas@gmail.com<br>
     Instagram: @sanareveritas.id
 <p>
-
-</body>
-</html>
