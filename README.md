@@ -13,7 +13,8 @@ Maraknya perdebatan antara kaum awam dengan tenaga kesehatan di media sosial ter
 Literasi terkadang sering dianggap remeh oleh sebagian masyarakat, namun tingkat literasi seseorang dapat menunjukkan kualitas yang ia berikan. <strong>Di sinilah peran Sanare, sebuah non-profit and non-governmental organization yang dibangun untuk menciptakan akses literasi yang mudah dan terpercaya bagi masyarakat.</strong> Literasi terkadang sering dianggap remeh, namun tingkat literasi seseorang dapat menunjukkan kualitas yang ia berikan. Sanare melihat hal ini sebagai hal yang sering diremehkan orang namun memiliki dampak besar bagi kualitas masyarakat Indonesia. <strong>Sanare tidak hanya menciptakan lingkungan yang aman namun Sanare juga memberikan kesempatan bagi anak Indonesia dalam dunia kesehatan. Tidak hanya menyiapkan anak muda dengan memaparkan dunia kesehatan lebih dini, Sanare juga mengarahkan pada kesempatan-kesempatan yang berharga baik kompetisi, internship, webinar, dan lain hal sebagai bentuk kepedulian kami. Sanare berusaha untuk mengembalikan dampak yang baik bagi masyarakat dengan meningkatkan kualitas SDM.</strong></p>
  
   <h2>About Sanare</h2>
-  <p>Youth driven Health Initiative Community. Sanare bertujuan untuk meningkatkan literasi masyarakat dengan gaya Gen Z</p>
+  <p>Youth driven Health Initiative Community. <br>
+    Sanare bertujuan untuk meningkatkan literasi masyarakat dengan gaya Gen Z</p>
 
   <h2>Contact</h2>
   <p>
