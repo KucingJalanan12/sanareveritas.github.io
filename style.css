@@ -43,3 +43,34 @@ nav a{
     border-radius:15px;
     box-shadow:0 2px 10px rgba(0,0,0,.1);
 }
+
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .articles {
+        flex-direction: column;
+        padding: 20px;
+    }
+}
