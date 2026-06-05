@@ -17,7 +17,7 @@ Literasi terkadang sering dianggap remeh oleh sebagian masyarakat, namun tingkat
 
   <h2>Contact</h2>
   <p>email: sanareveritas@gmail.com
-     Instagram: @sanareveritas.id</p>
+     Instagram: @sanareveritas.id </p>
 
 </body>
 </html>
