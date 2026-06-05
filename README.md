@@ -16,8 +16,10 @@ Literasi terkadang sering dianggap remeh oleh sebagian masyarakat, namun tingkat
   <p>Youth driven Health Initiative Community. Sanare bertujuan untuk meningkatkan literasi masyarakat dengan gaya Gen Z</p>
 
   <h2>Contact</h2>
-  <p>email: sanareveritas@gmail.com
-     Instagram: @sanareveritas.id </p>
+  <p>
+    Email: sanareveritas@gmail.com<br>
+    Instagram: @sanareveritas.id
+<p>
 
 </body>
 </html>
