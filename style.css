@@ -51,7 +51,7 @@ nav a{
     align-items:center;
     justify-content:center;
 
-    background:url("hero.jpg") center/cover no-repeat;
+    background:url("images/hero.jpg") center/cover no-repeat;
 }
 
 .hero-overlay{
