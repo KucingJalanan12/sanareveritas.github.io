@@ -258,28 +258,56 @@ footer{
 }
 
 /* SUBMIT A CLAIM */
+/* SUBMIT CLAIM */
+
+.submit-section{
+    max-width:800px;
+    margin:auto;
+    padding:100px 80px;
+}
+
+.submit-section h2{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.submit-section p{
+    color:#555;
+    margin-bottom:40px;
+    line-height:1.7;
+}
+
 .claim-form{
-    width:100%;
     display:flex;
     flex-direction:column;
-    gap:15px;
+    gap:20px;
+}
+
+.claim-form label{
+    font-weight:600;
 }
 
 .claim-form input,
 .claim-form textarea{
-    padding:14px;
+    width:100%;
+    padding:15px;
     border:1px solid #ddd;
-    border-radius:10px;
+    border-radius:12px;
     font-size:16px;
 }
 
+.claim-form textarea{
+    min-height:150px;
+    resize:vertical;
+}
+
 .claim-form button{
-    width:200px;
-    padding:14px;
-    border:none;
+    width:fit-content;
+    padding:14px 24px;
     background:black;
     color:white;
-    font-weight:bold;
+    border:none;
+    border-radius:10px;
     cursor:pointer;
 }
 
