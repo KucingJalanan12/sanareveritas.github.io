@@ -257,6 +257,33 @@ footer{
     margin-bottom:20px;
 }
 
+/* SUBMIT A CLAIM */
+.claim-form{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.claim-form input,
+.claim-form textarea{
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.claim-form button{
+    width:200px;
+    padding:14px;
+    border:none;
+    background:black;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+
 /* MOBILE */
 
 @media(max-width:768px){
