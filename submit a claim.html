@@ -1,17 +1,54 @@
-<form action="https://formspree.io/f/xaqgeqzg" method="POST">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Claim - Sanare Veritas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <label>Health Claim</label>
-    <input type="text" name="claim" required>
+<header>
+    <h1 class="logo">Sanare Veritas</h1>
 
-    <label>Where did you see this claim?</label>
-    <input type="text" name="source" required>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="investigations.html">Investigations</a>
+        <a href="submit.html">Submit a Claim</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
 
-    <label>Additional Notes</label>
-    <textarea name="notes"></textarea>
+<section class="submit-section">
 
-    <button type="submit">
-        Submit Claim
-    </button>
+    <h2>Submit a Claim</h2>
 
-</form>
+    <p>
+        Seen a health claim online and not sure whether it's true?
+        Send it to SANARE and we may investigate it.
+    </p>
 
+    <form
+        class="claim-form"
+        action="https://formspree.io/f/xaqgeqzg"
+        method="POST">
+
+        <label>Health Claim</label>
+        <input type="text" name="claim" required>
+
+        <label>Where did you see this claim?</label>
+        <input type="text" name="source" required>
+
+        <label>Additional Notes</label>
+        <textarea name="notes"></textarea>
+
+        <button type="submit">
+            Submit Claim
+        </button>
+
+    </form>
+
+</section>
+
+</body>
+</html>
