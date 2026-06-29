@@ -268,7 +268,6 @@ footer{
 }
 
 /* SUBMIT A CLAIM */
-/* SUBMIT CLAIM */
 
 .submit-section{
     max-width:800px;
@@ -321,6 +320,41 @@ footer{
     cursor:pointer;
 }
 
+/* INVESTIGATIONS */
+.card-large{
+    display:flex;
+    align-items:center;
+    gap:40px;
+
+    padding:40px;
+    background:#fff;
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card-large img{
+    width:260px;
+    height:180px;
+    object-fit:cover;
+    border-radius:15px;
+    flex-shrink:0;
+}
+
+.card-content{
+    flex:1;
+}
+
+.card-content h3{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.card-content p{
+    font-size:20px;
+    color:#555;
+    margin-bottom:10px;
+}
 
 /* MOBILE */
 
