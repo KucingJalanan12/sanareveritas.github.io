@@ -132,6 +132,16 @@ nav a{
     border:none;
 }
 
+.btn{
+    display:inline-block;
+    padding:12px 20px;
+    background:black;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
 /* ARTICLES */
 .articles{
     padding:80px;
