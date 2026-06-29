@@ -142,10 +142,12 @@ nav a{
     font-weight:bold;
 }
 
-/* ARTICLES */
+/* LIST INVESTIGATIONS */
 
 .articles{
-    padding:60px 80px;
+    max-width:1200px;
+    margin:0 auto;
+    padding:60px 40px;
     background:#fafafa;
 }
 
