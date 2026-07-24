@@ -82,6 +82,7 @@ nav a{
 .hero-content button{
     padding:14px 24px;
     border:none;
+    border-radius:999px;
     background:white;
     color:black;
     font-weight:bold;
@@ -130,6 +131,8 @@ nav a{
     background:black;
     color:white;
     border:none;
+    border-radius:999px;
+    cursor:pointer;
 }
 
 .btn{
