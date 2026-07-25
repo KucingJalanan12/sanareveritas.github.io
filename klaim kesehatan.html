@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klaim Kesehatan - Sanare Veritas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">Sanare Veritas</h1>
+
+    <nav>
+        <a href="index-id.html">Beranda</a>
+        <a href="investigasi.html">Investigasi</a>
+        <a href="klaim kesehatan">Klaim Kesehatan</a>
+        <a href="tentang.html">Tentang</a>
+    </nav>
+</header>
+
+<section class="submit-section">
+
+    <h2>Klaim Kesehatan</h2>
+
+    <p>
+        Pernah melihat klaim kesehatan di internet dan tidak yakin apakah klaim tersebut benar?
+        Kirimkan kepada SANARE, dan kami akan mengamati serta menyelidikinya.
+    </p>
+
+    <form
+        class="claim-form"
+        action="https://formspree.io/f/xaqgeqzg"
+        method="POST">
+
+        <label>Klaim Kesehatan</label>
+        <input type="text" name="claim" required>
+
+        <label>Di mana Anda melihat klaim ini?</label>
+        <input type="text" name="source" required>
+
+        <label>Catatan Tambahan</label>
+        <textarea name="notes"></textarea>
+
+        <button type="submit">
+            Kirim Klaim
+        </button>
+
+    </form>
+
+</section>
+
+</body>
+</html>
