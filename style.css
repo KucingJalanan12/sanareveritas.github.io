@@ -305,6 +305,56 @@ footer{
     margin-bottom:20px;
 }
 
+.about-item{
+    border-top:1px solid rgba(255,255,255,.35);
+    padding:20px 0;
+}
+
+.about-item:last-child{
+    border-bottom:1px solid rgba(255,255,255,.35);
+}
+
+.about-item summary{
+    list-style:none;
+    cursor:pointer;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    font-size:32px;
+    font-weight:700;
+    color:white;
+}
+
+.about-item summary::-webkit-details-marker{
+    display:none;
+}
+
+.about-item summary::after{
+    content:"→";
+    font-size:28px;
+    transition:.3s;
+}
+
+.about-item[open] summary::after{
+    content:"↓";
+}
+
+.about-item p,
+.about-item ul{
+    margin-top:20px;
+    line-height:1.8;
+}
+
+.about-list{
+    padding-left:20px;
+}
+
+.about-list li{
+    margin-bottom:18px;
+}
+
 /* SUBMIT A CLAIM */
 
 .submit-section{
