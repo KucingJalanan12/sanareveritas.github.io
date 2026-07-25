@@ -258,7 +258,7 @@ footer{
 /* ABOUT HERO */
 
 .about-page{
-    min-height:100vh;
+    min-height:70vh;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -301,6 +301,7 @@ footer{
     max-width:900px;
     margin:80px auto;
     padding:0 20px;
+    background:white;
 }
 
 .about-item{
