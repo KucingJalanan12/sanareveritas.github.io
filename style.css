@@ -255,30 +255,23 @@ footer{
 }
 
 /* ABOUT PAGE */
+/* ABOUT HERO */
 
 .about-page{
     min-height:100vh;
-
     display:flex;
     justify-content:center;
     align-items:center;
 
     background:url("hero banner.jpg") center/cover no-repeat;
-
     position:relative;
-}
-
-.about-section{
-    text-align:left;
-    margin-top:30px;
 }
 
 .about-page::before{
     content:"";
     position:absolute;
     inset:0;
-
-    background:rgba(0,0,0,0.5);
+    background:rgba(0,0,0,.5);
 }
 
 .about-content{
@@ -287,7 +280,6 @@ footer{
 
     max-width:900px;
     text-align:center;
-
     color:white;
     padding:20px;
 }
@@ -300,18 +292,24 @@ footer{
 .about-content p{
     font-size:18px;
     line-height:1.8;
+    color:white;
+}
 
-    color:#ffff;
-    margin-bottom:20px;
+/* ABOUT DETAILS */
+
+.about-details{
+    max-width:900px;
+    margin:80px auto;
+    padding:0 20px;
 }
 
 .about-item{
-    border-top:1px solid rgba(255,255,255,.35);
-    padding:20px 0;
+    border-top:1px solid #ddd;
+    padding:24px 0;
 }
 
 .about-item:last-child{
-    border-bottom:1px solid rgba(255,255,255,.35);
+    border-bottom:1px solid #ddd;
 }
 
 .about-item summary{
@@ -324,7 +322,7 @@ footer{
 
     font-size:32px;
     font-weight:700;
-    color:white;
+    color:#111;
 }
 
 .about-item summary::-webkit-details-marker{
@@ -345,16 +343,16 @@ footer{
 .about-item ul{
     margin-top:20px;
     line-height:1.8;
+    color:#555;
 }
 
 .about-list{
-    padding-left:20px;
+    padding-left:22px;
 }
 
 .about-list li{
     margin-bottom:18px;
 }
-
 /* SUBMIT A CLAIM */
 
 .submit-section{
