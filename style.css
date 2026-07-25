@@ -456,6 +456,20 @@ footer{
     color:#666;
     margin-bottom:8px;
 }
+
+.card-link{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card-link:hover .card-large{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.12);
+    transition: .3s;
+    cursor: pointer;
+}
+
 /* MOBILE */
 
 @media(max-width:768px){
