@@ -355,13 +355,13 @@ footer{
     margin-bottom:18px;
 }
 
-.hero-content button{
+.claim-form button{
+    width:fit-content;
     padding:14px 24px;
+    background:black;
+    color:white;
     border:none;
-    border-radius:999px;
-    background:white;
-    color:black;
-    font-weight:bold;
+    border-radius:10px;
     cursor:pointer;
 }
 
