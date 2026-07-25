@@ -517,6 +517,12 @@ footer{
     line-height:1.8;
     color:#333;
 }
+
+mark{
+    background:#fff59d;
+    padding:2px 4px;
+    border-radius:4px;
+}
 /* ===== MOBILE ===== */
 
 @media (max-width:768px){
