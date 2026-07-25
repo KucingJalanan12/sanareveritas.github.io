@@ -355,14 +355,14 @@ footer{
     margin-bottom:18px;
 }
 
-.claim-form button{
-    width:fit-content;
-    padding:14px 24px;
+.btn{
+    display:inline-block;
+    padding:12px 20px;
     background:black;
     color:white;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
 }
 
 /* SUBMIT A CLAIM */
