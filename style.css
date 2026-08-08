@@ -323,6 +323,30 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
+/* =========================================================
+   TEXT TRANSITION — LARGE CARD
+========================================================= */
+
+.card-large h3,
+.card-large p,
+.card-large button {
+    transition:
+        transform 0.4s ease,
+        opacity 0.4s ease,
+        color 0.4s ease;
+}
+
+.card-large:hover h3 {
+    transform: translateX(5px);
+}
+
+.card-large:hover p {
+    transform: translateX(5px);
+}
+
+.card-large:hover button {
+    transform: translateX(5px);
+}
 
 /* =========================================================
    HOME PAGE — PRINCIPLES
