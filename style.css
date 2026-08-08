@@ -6,8 +6,9 @@
 }
 
 body{
-    background:#6EADBC;
+    background:#F1F7D5;
     color:#111;
+    overflow-x:hidden;
 }
 
 /* NAVBAR */
@@ -44,14 +45,26 @@ nav a{
 
 /* HERO (NASA STYLE) */
 .hero{
-    height:90vh;
+    min-height:90vh;
     position:relative;
-
     display:flex;
     align-items:center;
-    justify-content:center;
-
+    justify-content:flex-start;
+    padding:80px;
     background:url("hero banner.jpeg") center/cover no-repeat;
+    overflow:hidden;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        90deg,
+        rgba(74,68,102,.85),
+        rgba(74,68,102,.35),
+        rgba(0,0,0,.1)
+    );
 }
 
 .hero-overlay{
@@ -62,16 +75,30 @@ nav a{
 
 .hero-content{
     position:relative;
+    z-index:2;
     max-width:700px;
     text-align:left;
     color:white;
+
+    animation:heroText 1s ease-out;
+}
+
+@keyframes heroText{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
 .hero-content h2{
     font-size:64px;
+    line-height:1.05;
     margin-bottom:20px;
 }
-
 .hero-content p{
     font-size:18px;
     line-height:1.6;
@@ -572,4 +599,32 @@ mark{
     .about-content p{
         font-size:16px;
     }
+}
+
+
+
+
+/* ===== SMOOTH ANIMATIONS ===== */
+
+.card,
+.card-large{
+    transition:
+        transform .5s ease,
+        box-shadow .5s ease;
+}
+
+.card:hover,
+.card-large:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(74,68,102,.18);
+}
+
+.card img,
+.card-large img{
+    transition:transform .6s ease;
+}
+
+.card:hover img,
+.card-large:hover img{
+    transform:scale(1.03);
 }
