@@ -1,5 +1,5 @@
 /* =========================================================
-   GENERAL / SEMUA PAGE
+   GENERAL — SEMUA PAGE
 ========================================================= */
 
 * {
@@ -10,13 +10,12 @@
 }
 
 :root {
-    --purple: #4A4466;
-    --blue: #6EADBC;
-    --green: #9ECBAC;
-    --cream: #F1F7D5;
-    --white: #ffffff;
+    --navy: #062B68;
+    --blue: #4C7C9B;
+    --light-blue: #F2F6FF;
+    --white: #FFFFFF;
     --black: #111111;
-    --gray: #666666;
+    --gray: #667085;
 }
 
 html {
@@ -24,14 +23,14 @@ html {
 }
 
 body {
-    background: var(--cream);
+    background: var(--light-blue);
     color: var(--black);
     overflow-x: hidden;
 }
 
 
 /* =========================================================
-   NAVBAR / SEMUA PAGE
+   NAVBAR — SEMUA PAGE
 ========================================================= */
 
 header {
@@ -45,16 +44,16 @@ header {
 
     padding: 20px 6%;
 
-    background: rgba(255,255,255,0.92);
+    background: rgba(255, 255, 255, 0.93);
     backdrop-filter: blur(10px);
 
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #e5eaf0;
 }
 
 .logo {
     font-size: 28px;
     font-weight: 700;
-    color: var(--purple);
+    color: var(--navy);
 }
 
 nav {
@@ -66,11 +65,12 @@ nav a {
     text-decoration: none;
     color: var(--black);
     font-weight: 500;
+
     transition: 0.3s ease;
 }
 
 nav a:hover {
-    color: var(--purple);
+    color: var(--blue);
 }
 
 
@@ -80,6 +80,7 @@ nav a:hover {
 
 .hero {
     min-height: 90vh;
+
     position: relative;
 
     display: flex;
@@ -90,11 +91,11 @@ nav a:hover {
     background:
         linear-gradient(
             90deg,
-            rgba(74,68,102,.88),
-            rgba(74,68,102,.4),
-            rgba(0,0,0,.1)
+            rgba(6, 43, 104, 0.9),
+            rgba(6, 43, 104, 0.45),
+            rgba(0, 0, 0, 0.1)
         ),
-        url("hero banner.jpeg") center/cover no-repeat;
+        url("hero banner.jpeg") center / cover no-repeat;
 
     overflow: hidden;
 }
@@ -102,7 +103,6 @@ nav a:hover {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.15);
 }
 
 .hero-content {
@@ -112,6 +112,7 @@ nav a:hover {
     max-width: 700px;
 
     text-align: left;
+
     color: white;
 
     animation: heroText 1s ease-out;
@@ -119,57 +120,69 @@ nav a:hover {
 
 .hero-content h2 {
     font-size: 64px;
+
     line-height: 1.05;
+
     margin-bottom: 20px;
 }
 
 .hero-content p {
     font-size: 18px;
+
     line-height: 1.6;
+
     margin-bottom: 30px;
+
     color: white;
 }
 
 
-/* HOME PAGE — HERO BUTTON */
-
-.hero-content button {
-    padding: 14px 24px;
-    border: none;
-    border-radius: 999px;
-
-    background: white;
-    color: var(--purple);
-
-    font-weight: bold;
-    cursor: pointer;
-}
+/* HOME — HERO BUTTON */
 
 .btn {
     display: inline-block;
 
     padding: 13px 23px;
 
-    background: var(--purple);
+    background: var(--navy);
     color: white;
 
     text-decoration: none;
+
     border-radius: 999px;
 
     font-weight: bold;
 
-    transition: .3s ease;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
     background: var(--blue);
+
     transform: translateY(-3px);
 }
 
+.hero-content button {
+    padding: 14px 24px;
 
-/* HOME PAGE — HERO ANIMATION */
+    border: none;
+
+    border-radius: 999px;
+
+    background: white;
+
+    color: var(--navy);
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* HOME — HERO ANIMATION */
 
 @keyframes heroText {
+
     from {
         opacity: 0;
         transform: translateY(40px);
@@ -179,6 +192,7 @@ nav a:hover {
         opacity: 1;
         transform: translateY(0);
     }
+
 }
 
 
@@ -191,19 +205,21 @@ nav a:hover {
     max-width: 1200px;
 
     margin: 80px auto;
+
     padding: 0;
 }
 
 .featured h2 {
     font-size: 40px;
+
     margin-bottom: 30px;
 
-    color: var(--purple);
+    color: var(--navy);
 }
 
 
 /* =========================================================
-   HOME PAGE + INVESTIGATIONS PAGE — LARGE CARD
+   HOME + INVESTIGATIONS PAGE — LARGE CARD
 ========================================================= */
 
 .card-large {
@@ -213,9 +229,11 @@ nav a:hover {
     min-height: 280px;
 
     margin: 0 auto 30px;
+
     padding: 35px;
 
     display: flex;
+
     align-items: center;
 
     gap: 40px;
@@ -225,18 +243,18 @@ nav a:hover {
     border-radius: 20px;
 
     box-shadow:
-        0 10px 30px rgba(0,0,0,.07);
+        0 10px 30px rgba(6, 43, 104, 0.08);
 
     transition:
-        transform .4s ease,
-        box-shadow .4s ease;
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
 }
 
 .card-large:hover {
     transform: translateY(-7px);
 
     box-shadow:
-        0 20px 40px rgba(74,68,102,.18);
+        0 20px 40px rgba(6, 43, 104, 0.16);
 }
 
 
@@ -252,7 +270,7 @@ nav a:hover {
 
     flex-shrink: 0;
 
-    transition: transform .5s ease;
+    transition: transform 0.5s ease;
 }
 
 .card-large:hover img {
@@ -264,15 +282,17 @@ nav a:hover {
 
 .card-large h3 {
     font-size: 30px;
+
     line-height: 1.25;
 
     margin-bottom: 15px;
 
-    color: var(--purple);
+    color: var(--navy);
 }
 
 .card-large p {
     color: var(--gray);
+
     line-height: 1.7;
 
     margin-bottom: 20px;
@@ -284,25 +304,45 @@ nav a:hover {
 .card-large button {
     padding: 12px 20px;
 
-    background: var(--purple);
+    background: var(--navy);
+
     color: white;
 
     border: none;
+
     border-radius: 999px;
 
     cursor: pointer;
 
-    transition: .3s ease;
+    transition: 0.3s ease;
 }
 
 .card-large button:hover {
     background: var(--blue);
+
     transform: translateY(-2px);
 }
 
 
 /* =========================================================
-   INVESTIGATIONS PAGE
+   HOME PAGE — PRINCIPLES
+========================================================= */
+
+.principles {
+    padding-left: 22px;
+}
+
+.principles li {
+    margin-bottom: 18px;
+
+    line-height: 1.7;
+
+    color: var(--gray);
+}
+
+
+/* =========================================================
+   INVESTIGATIONS PAGE — MAIN SECTION
 ========================================================= */
 
 .investigations {
@@ -310,19 +350,22 @@ nav a:hover {
     max-width: 1200px;
 
     margin: 70px auto;
+
     padding: 40px;
 
-    background: var(--green);
+    background: #E8F0FA;
 
     border-radius: 25px;
 }
 
 .articles h2 {
     font-size: 38px;
+
     margin-bottom: 35px;
 
     font-weight: 700;
-    color: var(--purple);
+
+    color: var(--navy);
 }
 
 
@@ -349,34 +392,37 @@ nav a:hover {
 ========================================================= */
 
 .card {
-    background: white;
+    background: var(--white);
 
     border-radius: 18px;
+
     overflow: hidden;
 
     box-shadow:
-        0 8px 20px rgba(0,0,0,.08);
+        0 8px 20px rgba(6, 43, 104, 0.08);
 
     transition:
-        transform .4s ease,
-        box-shadow .4s ease;
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
 }
 
 .card:hover {
     transform: translateY(-7px);
 
     box-shadow:
-        0 18px 35px rgba(74,68,102,.18);
+        0 18px 35px rgba(6, 43, 104, 0.16);
 }
 
 .card img {
     width: 100%;
+
     height: 210px;
 
     object-fit: cover;
+
     display: block;
 
-    transition: transform .5s ease;
+    transition: transform 0.5s ease;
 }
 
 .card:hover img {
@@ -389,18 +435,21 @@ nav a:hover {
 
 .card h3 {
     font-size: 20px;
+
     line-height: 1.4;
 
     margin-bottom: 12px;
 
-    color: var(--purple);
+    color: var(--navy);
 }
 
 .card p {
     font-size: 15px;
+
     color: var(--gray);
 
     line-height: 1.6;
+
     margin: 0;
 }
 
@@ -413,6 +462,7 @@ nav a:hover {
     display: block;
 
     text-decoration: none;
+
     color: inherit;
 }
 
@@ -426,38 +476,6 @@ nav a:hover {
 
 
 /* =========================================================
-   HOME PAGE — PRINCIPLES
-========================================================= */
-
-.principles {
-    padding-left: 22px;
-}
-
-.principles li {
-    margin-bottom: 18px;
-
-    line-height: 1.7;
-
-    color: var(--gray);
-}
-
-
-/* =========================================================
-   ALL PAGE — FOOTER
-========================================================= */
-
-footer {
-    margin-top: 80px;
-
-    padding: 60px 8%;
-
-    background: var(--purple);
-
-    color: white;
-}
-
-
-/* =========================================================
    ABOUT PAGE — HERO
 ========================================================= */
 
@@ -465,23 +483,26 @@ footer {
     min-height: 70vh;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     padding: 60px 30px;
 
     background:
         linear-gradient(
-            rgba(74,68,102,.7),
-            rgba(74,68,102,.7)
+            rgba(6, 43, 104, 0.72),
+            rgba(6, 43, 104, 0.72)
         ),
-        url("hero banner.jpeg") center/cover no-repeat;
+        url("hero banner.jpeg") center / cover no-repeat;
 
     position: relative;
 }
 
 .about-content {
     position: relative;
+
     z-index: 1;
 
     max-width: 900px;
@@ -489,16 +510,19 @@ footer {
     text-align: center;
 
     color: white;
+
     padding: 20px;
 }
 
 .about-content h2 {
     font-size: 56px;
+
     margin-bottom: 20px;
 }
 
 .about-content p {
     font-size: 18px;
+
     line-height: 1.8;
 
     color: white;
@@ -514,16 +538,19 @@ footer {
     max-width: 900px;
 
     margin: 80px auto;
+
     padding: 0;
 
     background: white;
 
     border-radius: 20px;
+
     overflow: hidden;
 }
 
 .about-item {
     border-top: 1px solid #ddd;
+
     padding: 24px;
 }
 
@@ -533,16 +560,20 @@ footer {
 
 .about-item summary {
     list-style: none;
+
     cursor: pointer;
 
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 
     font-size: 32px;
+
     font-weight: 700;
 
-    color: var(--purple);
+    color: var(--navy);
 }
 
 .about-item summary::-webkit-details-marker {
@@ -554,7 +585,7 @@ footer {
 
     font-size: 28px;
 
-    transition: .3s;
+    transition: 0.3s;
 }
 
 .about-item[open] summary::after {
@@ -588,6 +619,7 @@ footer {
     max-width: 800px;
 
     margin: auto;
+
     padding: 100px 0;
 }
 
@@ -596,7 +628,7 @@ footer {
 
     margin-bottom: 20px;
 
-    color: var(--purple);
+    color: var(--navy);
 }
 
 .submit-section p {
@@ -609,6 +641,7 @@ footer {
 
 .claim-form {
     display: flex;
+
     flex-direction: column;
 
     gap: 20px;
@@ -616,6 +649,8 @@ footer {
 
 .claim-form label {
     font-weight: 600;
+
+    color: var(--navy);
 }
 
 .claim-form input,
@@ -624,14 +659,18 @@ footer {
 
     padding: 15px;
 
-    border: 1px solid #ddd;
+    border: 1px solid #d7dee8;
+
     border-radius: 12px;
 
     font-size: 16px;
+
+    background: white;
 }
 
 .claim-form textarea {
     min-height: 150px;
+
     resize: vertical;
 }
 
@@ -640,13 +679,19 @@ footer {
 
     padding: 14px 24px;
 
-    background: var(--purple);
+    background: var(--navy);
+
     color: white;
 
     border: none;
+
     border-radius: 999px;
 
     cursor: pointer;
+}
+
+.claim-form button:hover {
+    background: var(--blue);
 }
 
 
@@ -670,7 +715,7 @@ footer {
 
     margin-bottom: 20px;
 
-    color: var(--purple);
+    color: var(--navy);
 }
 
 .article-meta {
@@ -678,7 +723,7 @@ footer {
 
     gap: 20px;
 
-    color: #666;
+    color: var(--gray);
 
     font-size: 15px;
 
@@ -686,7 +731,7 @@ footer {
 }
 
 .editor {
-    color: #666;
+    color: var(--gray);
 
     margin-bottom: 30px;
 }
@@ -704,7 +749,7 @@ footer {
 
     margin-bottom: 20px;
 
-    color: var(--purple);
+    color: var(--navy);
 }
 
 .article p {
@@ -716,7 +761,9 @@ footer {
 }
 
 mark {
-    background: #fff59d;
+    background: #DCEBFA;
+
+    color: var(--navy);
 
     padding: 2px 4px;
 
@@ -725,13 +772,31 @@ mark {
 
 
 /* =========================================================
-   MOBILE — ALL PAGE
+   FOOTER — SEMUA PAGE
+========================================================= */
+
+footer {
+    margin-top: 80px;
+
+    padding: 60px 8%;
+
+    background: var(--navy);
+
+    color: white;
+}
+
+
+/* =========================================================
+   MOBILE — SEMUA PAGE
 ========================================================= */
 
 @media (max-width: 768px) {
 
+    /* NAVBAR */
+
     header {
         flex-direction: column;
+
         gap: 15px;
 
         padding: 20px;
@@ -762,18 +827,8 @@ mark {
         font-size: 16px;
     }
 
-    .featured {
-        width: 92%;
 
-        margin: 60px auto;
-    }
-
-    .featured h2 {
-        font-size: 32px;
-    }
-
-
-    /* LARGE CARDS */
+    /* LARGE CARD */
 
     .card-large {
         flex-direction: column;
@@ -853,7 +908,7 @@ mark {
     }
 
 
-    /* BREAKFAST / ARTICLE */
+    /* BREAKFAST */
 
     .article {
         width: 90%;
@@ -876,4 +931,5 @@ mark {
     .article p {
         font-size: 16px;
     }
+
 }
