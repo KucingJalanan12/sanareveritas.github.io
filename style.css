@@ -477,6 +477,24 @@ nav a:hover {
     margin: 0;
 }
 
+/* =========================================================
+   TEXT TRANSITION — SMALL CARD
+========================================================= */
+
+.card h3,
+.card p {
+    transition:
+        transform 0.4s ease,
+        color 0.4s ease;
+}
+
+.card:hover h3 {
+    transform: translateX(5px);
+}
+
+.card:hover p {
+    transform: translateX(5px);
+}
 
 /* =========================================================
    INVESTIGATIONS PAGE — CARD LINK
