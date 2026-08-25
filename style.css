@@ -570,50 +570,24 @@ nav a:hover {
 .about-item {
     border-top: 1px solid #ddd;
 
-    padding: 24px;
+    padding: 30px;
 }
 
 .about-item:first-child {
     border-top: none;
 }
 
-.about-item summary {
-    list-style: none;
-
-    cursor: pointer;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
+.about-item h2 {
     font-size: 32px;
 
-    font-weight: 700;
+    margin-bottom: 20px;
 
     color: var(--navy);
 }
 
-.about-item summary::-webkit-details-marker {
-    display: none;
-}
-
-.about-item summary::after {
-    content: "→";
-
-    font-size: 28px;
-
-    transition: 0.3s;
-}
-
-.about-item[open] summary::after {
-    content: "↓";
-}
-
 .about-item p,
 .about-item ul {
-    margin-top: 20px;
+    margin-top: 0;
 
     line-height: 1.8;
 
@@ -625,11 +599,38 @@ nav a:hover {
 }
 
 .about-list li {
-    margin-bottom: 18px;
+    margin-bottom: 22px;
+
+    line-height: 1.8;
 }
 
+.about-list strong {
+    color: var(--navy);
+}
 
-/* =========================================================
+.about-item button {
+    margin-top: 12px;
+
+    padding: 12px 20px;
+
+    background: var(--navy);
+
+    color: white;
+
+    border: none;
+
+    border-radius: 999px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.about-item button:hover {
+    background: var(--blue);
+
+    transform: translateY(-2px);
+}/* =========================================================
    SUBMIT A CLAIM PAGE
 ========================================================= */
 
