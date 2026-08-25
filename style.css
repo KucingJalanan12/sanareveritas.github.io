@@ -650,19 +650,91 @@ nav a:hover {
 
 
 /* =========================================================
-   ABOUT PAGE — VISION + MISSION
+   BECOME A PART OF SANARE
 ========================================================= */
 
-.about-item.vision-mission {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
+.become-section h2 {
+    margin-bottom: 30px;
 }
 
-.about-item.vision-mission .vision,
-.about-item.vision-mission .mission {
-    width: 100%;
-}}/* =========================================================
+.become-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.become-card {
+    padding: 25px;
+
+    background: var(--light-blue);
+
+    border-radius: 16px;
+
+    border: 1px solid #dce5f0;
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.become-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 25px rgba(6, 43, 104, 0.12);
+}
+
+.become-card h3 {
+    font-size: 21px;
+
+    margin-bottom: 15px;
+
+    color: var(--navy);
+}
+
+.become-card p {
+    line-height: 1.7;
+
+    color: var(--gray);
+}
+
+.become-card button {
+    margin-top: 15px;
+
+    padding: 11px 18px;
+
+    background: var(--navy);
+
+    color: white;
+
+    border: none;
+
+    border-radius: 999px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.become-card button:hover {
+    background: var(--blue);
+
+    transform: translateY(-2px);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .become-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =========================================================
    SUBMIT A CLAIM PAGE
 ========================================================= */
 
