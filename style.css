@@ -554,27 +554,36 @@ nav a:hover {
 
 .about-details {
     width: 90%;
-    max-width: 900px;
+    max-width: 1000px;
 
     margin: 80px auto;
 
-    padding: 0;
+    display: flex;
+    flex-direction: column;
 
-    background: white;
-
-    border-radius: 20px;
-
-    overflow: hidden;
+    gap: 30px;
 }
 
 .about-item {
-    border-top: 1px solid #ddd;
+    background: white;
 
-    padding: 30px;
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px rgba(6, 43, 104, 0.08);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
 }
 
-.about-item:first-child {
-    border-top: none;
+.about-item:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 18px 35px rgba(6, 43, 104, 0.14);
 }
 
 .about-item h2 {
@@ -585,9 +594,8 @@ nav a:hover {
     color: var(--navy);
 }
 
-.about-item p,
-.about-item ul {
-    margin-top: 0;
+.about-item p {
+    margin: 0;
 
     line-height: 1.8;
 
@@ -596,12 +604,20 @@ nav a:hover {
 
 .about-list {
     padding-left: 22px;
+
+    margin: 0;
 }
 
 .about-list li {
     margin-bottom: 22px;
 
     line-height: 1.8;
+
+    color: var(--gray);
+}
+
+.about-list li:last-child {
+    margin-bottom: 0;
 }
 
 .about-list strong {
@@ -630,7 +646,23 @@ nav a:hover {
     background: var(--blue);
 
     transform: translateY(-2px);
-}/* =========================================================
+}
+
+
+/* =========================================================
+   ABOUT PAGE — VISION + MISSION
+========================================================= */
+
+.about-item.vision-mission {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.about-item.vision-mission .vision,
+.about-item.vision-mission .mission {
+    width: 100%;
+}}/* =========================================================
    SUBMIT A CLAIM PAGE
 ========================================================= */
 
