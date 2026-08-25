@@ -171,7 +171,6 @@ nav a:hover {
     padding: 35px;
 
     display: flex;
-
     align-items: center;
 
     gap: 40px;
@@ -233,11 +232,9 @@ nav a:hover {
     padding: 12px 20px;
 
     background: var(--navy);
-
     color: white;
 
     border: none;
-
     border-radius: 999px;
 
     cursor: pointer;
@@ -288,8 +285,7 @@ nav a:hover {
 .grid {
     display: grid;
 
-    grid-template-columns:
-        repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
     gap: 30px;
 
@@ -367,8 +363,30 @@ nav a:hover {
 
 
 /* =========================================================
+   HOME — FEATURED
+========================================================= */
+
+.featured {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 80px auto;
+}
+
+.featured h2 {
+    font-size: 40px;
+
+    margin-bottom: 30px;
+
+    color: var(--navy);
+
+    padding-left: 35px;
+}
+
+
+/* =========================================================
    ABOUT — HERO
-   SAME STYLE AS HOME
+   SAME AS HOME
 ========================================================= */
 
 .about-page {
@@ -395,7 +413,6 @@ nav a:hover {
 
 .about-content {
     position: relative;
-
     z-index: 2;
 
     max-width: 700px;
@@ -866,6 +883,14 @@ footer {
     }
 
 
+    /* FEATURED */
+
+    .featured h2 {
+        font-size: 32px;
+        padding-left: 25px;
+    }
+
+
     /* SUBMIT CLAIM */
 
     .submit-section {
@@ -902,5 +927,4 @@ footer {
     .article p {
         font-size: 16px;
     }
-
 }
