@@ -90,7 +90,7 @@ nav a:hover {
             rgba(6, 43, 104, 0.45),
             rgba(0, 0, 0, 0.1)
         ),
-        url("hero banner.jpeg") center / cover no-repeat;
+        url("../images/hero banner.jpeg") center / cover no-repeat;
 
     overflow: hidden;
 }
@@ -406,7 +406,7 @@ nav a:hover {
             rgba(6, 43, 104, 0.45),
             rgba(0, 0, 0, 0.1)
         ),
-        url("hero banner.jpeg") center / cover no-repeat;
+        url("../images/hero banner.jpeg") center / cover no-repeat;
 
     overflow: hidden;
 }
