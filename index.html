@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <script>
+        const primary_language = (navigator.language).split('-')[0];
+        const supportedLanguages = ['en', 'id']
+        const defaultLanguage = 'en';
+
+        const Target = supportedLanguages.includes(primary_language) ? primary_language : defaultLanguage;
+        window.location.replace('./' + Target + '/index.html');
+
+    </script>
+
+</head>
+
