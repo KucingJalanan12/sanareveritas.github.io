@@ -308,6 +308,8 @@ nav a:hover {
 
     display: flex;
     flex-direction: column;
+
+    height: 420px;
 }
 
 .card:hover {
@@ -368,7 +370,6 @@ nav a:hover {
 .card-link .card-large {
     cursor: pointer;
 }
-
 /* =========================================================
    HOME — FEATURED
 ========================================================= */
