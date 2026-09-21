@@ -839,22 +839,27 @@ footer {
 
     /* INVESTIGATIONS */
 
-    .investigations {
-        width: 92%;
+    /* INVESTIGATIONS */
 
-        padding: 25px;
+.investigations {
+    width: 92%;
 
-        margin: 60px auto;
-    }
+    padding: 25px;
 
-    .grid {
-        grid-template-columns: 1fr;
-    }
+    margin: 60px auto;
+}
 
-    .card img {
-        height: 220px;
-    }
+.grid {
+    grid-template-columns: 1fr;
+}
 
+.card {
+    height: auto;
+}
+
+.card img {
+    height: 220px;
+}
 
     /* ABOUT */
 
