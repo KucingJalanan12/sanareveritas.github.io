@@ -28,7 +28,7 @@
 
     <!-- GANTI ACTION -->
     <form 
-        action="https://formspree.io/f/xppzwbew"
+        action="https://formspree.io/f/xaenpayp"
         method="POST" 
         class="claim-form">
 
@@ -43,148 +43,226 @@
         <input type="text" name="industry" required>
 
         <label>Website (Optional)</label>
-        <input type="text" name="website">
+        <input type="url" name="Website Link">
 
         <label>Social Media (Optional)</label>
-        <input type="text" name="social media">
 
+        <label>
+            <input type="radio" name="Social Media Type" value="LinkedIn Social Media">
+            LinkedIn
+        </label>
+
+        <label>
+            <input type="radio" name="Social Media Type" value="Facebook Social Media">
+            Facebook
+        </label>
+
+        <label>
+            <input type="radio" name="Social Media Type" value="Instagram Social Media">
+            Instagram
+        </label>
+
+        <label>
+            <input type="radio" name="Social Media Type" value="Twitter Social Media">
+            Twitter/X
+        </label>
+
+        <label>
+            <input type="radio" name="Social Media Type" value="Youtube Social Media">
+            Youtube
+        </label>
+
+        <label>
+            <input type="radio" name="Social Media Type" value="Other Social Media">
+            Other
+        </label>
+
+        <input type="text" name="Other Social Media Type" placeholder="If others, please specify.">
+
+        <input type="url" name="Social Media Link" placeholder="Please input your social media account as a link.">
 
         <!-- SECTION 2 -->
         <h3>Section 2 — Contact Person</h3>
 
-        <label>How would you like to support SANARE?</label>
+        <label>Full Name</label>
+        <input type="text" name="Full Name" required>
 
-        <label>
-            <input type="radio" name="Donation Type" value="Monetary Donation" required>
-            Monetary Donation
-        </label>
+        <label>Position</label>
+        <input type="text" name="Position" required>
 
-        <label>
-            <input type="radio" name="Donation Type" value="Product Donation">
-            Product Donation
-        </label>
+        <label>Email Address (Optional)</label>
+        <input type="email" name="Email Address">
 
-        <label>
-            <input type="radio" name="Donation Type" value="Medical/Hygiene Supplies">
-            Medical/Hygiene Supplies
-        </label>
-
-        <label>
-            <input type="radio" name="Donation Type" value="Educational Materials">
-            Educational Materials
-        </label>
-
-        <label>
-            <input type="radio" name="Donation Type" value="Food & Essentials">
-            Food & Essentials
-        </label>
-
-        <label>
-            <input type="radio" name="Donation Type" value="Other">
-            Other
-        </label>
-
-        <input type="text" name="Other Donation Type" placeholder="If Other, please specify">
-
+        <label>Phone Number (Optional)</label>
+        <input type="tel" name="Phone Number">
 
         <!-- SECTION 3 -->
-        <h3>Section 3 — Donation Details</h3>
+        <h3>Section 3 — Sponsorship Type</h3>
 
-        <label>Donation Amount (Rp)</label>
-        <input type="number" name="Donation Amount">
-
-        <label>Item(s) to be Donated</label>
-        <textarea name="Items to be Donated"></textarea>
-
-        <label>Quantity</label>
-        <input type="text" name="Quantity">
-
-
-        <!-- SECTION 4 -->
-        <h3>Section 4 — Donation Purpose (Optional)</h3>
-
-        <label>Which program would you like to support?</label>
+        <label>What type of sponsorship would you like to provide?</label>
 
         <label>
-            <input type="checkbox" name="Donation Purpose" value="Health Literacy Content">
+            <input type="radio" name="Sponsorship Type" value="Financial Sponsorship" required>
+            Financial Sponsorship
+        </label>
+
+        <label>
+            <input type="radio" name="Sponsorship Type" value="Product Sponsorship">
+            Product Sponsorship
+        </label>
+
+        <label>
+            <input type="radio" name="Sponsorship Type" value="In-Kind Sponsorship">
+            In-Kind Donation
+        </label>
+
+        <label>
+            <input type="radio" name="Sponsorship Type" value="Event Sponsorship">
+            Event Sponsorship
+        </label>
+
+        <label>
+            <input type="radio" name="Sponsorship Type" value="Media Sponsorship">
+            Media Sponsorship
+        </label>
+
+        <label>
+            <input type="radio" name="Sponsorship Type" value="Long-Term Sponsorship">
+            Long-Term Sponsorship
+        </label>
+
+        <label>
+            <input type="radio" name="Sponsorship Type" value="Other Sponsorship">
+            Other Sponsorship
+        </label>
+
+        <input type="text" name="Other Sponsorship Type" placeholder="If other, please specify.">
+
+        <!-- SECTION 4 -->
+
+        <h3>Section 4 — Sponsorship Details</h3>
+
+        <label>Estimated Sponsorship Amount (Optional)</label>
+        <input type="text" name="Esimated Sponsorship Amount">
+
+        <label>Products/Services to be Sponsored (If Applicable)</label>
+        <input type="text" name="Products/Services to be Sponsored">
+
+        <label>Preferred Programs to Support</label>
+
+        <label>
+            <input type="checkbox" name="Sponsorship Purpose" value="Health Literacy Content">
             Health Literacy Content
         </label>
 
         <label>
-            <input type="checkbox" name="Donation Purpose" value="School Outreach">
+            <input type="checkbox" name="Sponsorship Purpose" value="School Outreach">
             School Outreach
         </label>
 
         <label>
-            <input type="checkbox" name="Donation Purpose" value="SANARE Care">
+            <input type="checkbox" name="Sponsorship Purpose" value="SANARE Care">
             SANARE Care
         </label>
 
         <label>
-            <input type="checkbox" name="Donation Purpose" value="SANARE Mentoring">
+            <input type="checkbox" name="Sponsorship Purpose" value="SANARE Mentoring">
             SANARE Mentoring
         </label>
 
         <label>
-            <input type="checkbox" name="Donation Purpose" value="Community Health Campaigns">
-            Community Health Campaigns
+            <input type="checkbox" name="Sponsorship Purpose" value="Research Projects">
+            Research Projects
         </label>
 
         <label>
-            <input type="checkbox" name="Donation Purpose" value="General Fund">
-            General Fund (Where Needed Most)
+            <input type="checkbox" name="Donation Purpose" value="Events and Campaigns">
+            Events & Campaigns
         </label>
 
+        <label>
+            <input type="checkbox" name="Donation Purpose" value="General Operations">
+            General Operations
+        </label>
+
+        <label>
+            <input type="checkbox" name="Donation Purpose" value="Where Needed Most">
+            Where Needed Most
+        </label>
 
         <!-- SECTION 5 -->
-        <h3>Section 5 — Recognition</h3>
+        <h3>Section 5 — Sponsorship Objectives</h3>
 
-        <label>Would you like your donation to be acknowledged publicly?</label>
-
-        <label>
-            <input type="radio" name="Recognition" value="Yes" required>
-            Yes
-        </label>
-
-        <label>
-            <input type="radio" name="Recognition" value="Yes, but initials only">
-            Yes, but initials only
-        </label>
-
-        <label>
-            <input type="radio" name="Recognition" value="No, anonymous">
-            No, I prefer to remain anonymous
-        </label>
-
+        <label for="sponsorship-objectives">What are your goals or expectations from sponsoring SANARE?</label>
+        <textarea id="sponsorship-objectives" name="Sponsorship Objectives" rows="5" placeholder="Tell us about your goals or expectations..."></textarea>
 
         <!-- SECTION 6 -->
-        <h3>Section 6 — Message (Optional)</h3>
+        <h3>Section 6 — Sponsorship Benefits</h3>
 
-        <label>Would you like to leave a message for the SANARE team?</label>
-
-        <textarea name="Message"></textarea>
-
-
-        <!-- SECTION 7 -->
-        <h3>Section 7 — Agreement</h3>
+        <label>Which sponsorship benefit are you interested in?</label>
 
         <label>
-            <input type="checkbox" name="Agreement Information" value="Confirmed" required>
+            <input type="radio" name="Sponsorship Benefits" value="Logo Placement">
+            Logo Placement
+        </label>
+
+        <label>
+            <input type="radio" name="Sponsorship Benefits" value="Social Media Mention">
+            Social Media Mention
+        </label>
+
+        <label>
+            <input type="radio" name="Sponsorship Benefits" value="Event Booth / Brand Exposure">
+            Event Booth / Brand Exposure
+        </label>
+
+        <label>
+            <input type="radio" name="Sponsorship Benefits" value="Speaking Opportunity">
+            Speaking Opportunity
+        </label>
+
+        <label>
+            <input type="radio" name="Sponsorship Benefits" value="Website Recognition">
+            Website Recognition
+        </label>
+
+        <label>
+            <input type="radio" name="Sponsorship Benefits" value="Long-Term CSR Partnership">
+            Long-Term CSR Partnership
+        </label>
+
+        <label>
+            <input type="radio" name="Sponsorship Benefits" value="Other">
+            Other
+        </label>
+
+        <input type="text" name="Other Sponsorship Benefit" placeholder="If other, please specify.">
+
+        <!-- SECTION 7 -->
+        <h3>Section 7 — Additional Information</h3>
+
+        <label for="additional-info">Is there anything else you'd like SANARE to know?</label>
+        <textarea id="additional-info" name="Additional Information" rows="5" placeholder="Share any additional information here..."></textarea>
+
+        <!-- SECTION 8 -->
+        <h3>Section 8 — Agreement</h3>
+
+        <label>
+            <input type="checkbox" name="Agreement Information" value="Agreed" required>
             I confirm that the information provided is accurate.
         </label>
 
         <label>
-            <input type="checkbox" name="Agreement Donation" value="Agreed" required>
-            I understand that my donation will be used to support SANARE's mission and programs.
+            <input type="checkbox" name="Agreement Sponsorship" value="Agreed" required>
+            I understand that submitting this form does not guarantee a sponsorship agreement.
         </label>
 
         <label>
             <input type="checkbox" name="Agreement Contact" value="Agreed" required>
-            I agree that SANARE may contact me if additional information is needed regarding this donation.
+            I agree that SANARE may contact me to discuss sponsorship opportunities and next steps.
         </label>
 
-
-        <button type="submit">Submit Donation</button>
+        <button type="submit">Submit Sponsorship</button>
 
     </form>
 
