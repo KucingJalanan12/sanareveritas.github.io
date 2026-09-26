@@ -278,19 +278,6 @@ nav a:hover {
    INVESTIGATIONS
 ========================================================= */
 
-.investigations {
-    width: 90%;
-    max-width: 1200px;
-
-    margin: 70px auto;
-
-    padding: 40px;
-
-    background: #E8F0FA;
-
-    border-radius: 25px;
-}
-
 .grid {
     display: grid;
 
@@ -301,6 +288,8 @@ nav a:hover {
     max-width: 1100px;
 
     margin: 0 auto;
+
+    align-items: stretch;
 }
 
 .card {
@@ -316,6 +305,11 @@ nav a:hover {
     transition:
         transform 0.5s ease,
         box-shadow 0.5s ease;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 420px;
 }
 
 .card:hover {
@@ -336,6 +330,11 @@ nav a:hover {
 
 .card-content {
     padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
 }
 
 .card h3 {
@@ -359,18 +358,18 @@ nav a:hover {
 }
 
 .card-link {
-    display: block;
+    display: flex;
 
     text-decoration: none;
 
     color: inherit;
+
+    height: 100%;
 }
 
 .card-link .card-large {
     cursor: pointer;
 }
-
-
 /* =========================================================
    HOME — FEATURED
 ========================================================= */
@@ -840,22 +839,27 @@ footer {
 
     /* INVESTIGATIONS */
 
-    .investigations {
-        width: 92%;
+    /* INVESTIGATIONS */
 
-        padding: 25px;
+.investigations {
+    width: 92%;
 
-        margin: 60px auto;
-    }
+    padding: 25px;
 
-    .grid {
-        grid-template-columns: 1fr;
-    }
+    margin: 60px auto;
+}
 
-    .card img {
-        height: 220px;
-    }
+.grid {
+    grid-template-columns: 1fr;
+}
 
+.card {
+    height: auto;
+}
+
+.card img {
+    height: 220px;
+}
 
     /* ABOUT */
 
