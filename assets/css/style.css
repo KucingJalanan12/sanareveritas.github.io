@@ -660,6 +660,10 @@ nav a:hover {
     background: white;
 }
 
+.claim-form input[type="radio"] {
+    vertical-align: text-top;
+}
+
 .claim-form textarea {
     min-height: 150px;
 
