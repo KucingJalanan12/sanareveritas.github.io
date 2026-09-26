@@ -39,7 +39,7 @@ header {
     align-items: center;
 
     min-height: 72px;
-    padding: 6px 2%;
+    padding: 6px 1%;
 
     background: rgba(255, 255, 255, 0.93);
     backdrop-filter: blur(10px);
