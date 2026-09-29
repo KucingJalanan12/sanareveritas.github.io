@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANARE Care Fund</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+
+
+<!-- NAVBAR -->
+<div id="header-placeholder"></div>
+<script src="../assets/js/header-loader.js"></script>
+
+<section class="submit-section">
+
+    <h2>🩺 SANARE Mentoring Registration Form</h2>
+
+    <p>Thank you for your interest in joining <b>SANARE</b> Mentoring! 
+        This program is designed to support people who are interested in health, 
+        medicine, research, public health, and related fields. Please fill out the form 
+        below honestly.</p>
+
+    <!-- GANTI ACTION -->
+    <form
+        action="https://formspree.io/f/maenajop"
+        method="post"
+        class="claim-form">
+
+        <!-- SECTION 1 -->
+        <h3>Section 1 — Personal Information</h3>
+
+        <label>Full Name</label>
+        <input type="text" name="full name" required>
+
+        <label>Preferred Name</label>
+        <input type="text" name="preferred name" required>
+
+        <label>Email Address</label>
+        <input type="email" name="email address" required>
+
+        <label>Phone Number</label>
+        <input type="tel" name="phone number" required>
+
+        <label>Instagram Username (Optional)</label>
+        <input type="text" name="instagram username">
+
+        <label>School / University</label>
+        <input type="text" name="school / university" required>
+
+        <label>Grade / Year</label>
+        <input type="text" name="grade / year" required>
+
+        <label>City</label>
+        <input type="text" name="city" required>
+
+        <!-- SECTION 2 -->
+        <h3>Section 2 — Academic Interests</h3>
+        <label>Which fields are you interested in? (You may choose more than one)</label>
+
+        <label>
+            <input type="checkbox" name="academic interest[]" value="Medicine">
+            Medicine
+        </label>
+
+        <label>
+            <input type="checkbox" name="academic interest[]" value="Biomedical Engineering">
+            Biomedical Engineering
+        </label>
+
+        <label>
+            <input type="checkbox" name="academic interest[]" value="Biology">
+            Biology
+        </label>
+
+        <label>
+            <input type="checkbox" name="academic interest[]" value="Public Health">
+            Public Health
+        </label>
+
+        <label>
+            <input type="checkbox" name="academic interest[]" value="Nutrition">
+            Nutrition
+        </label>
+
+        <label>
+            <input type="checkbox" name="academic interest[]" value="Psychology">
+            Psychology
+        </label>
+        
+        <label>
+            <input type="checkbox" name="academic interest[]" value="Pharmacy">
+            Pharmacy
+        </label>
+
+        <label>
+            <input type="checkbox" name="academic interest[]" value="Research & Science Competitions">
+            Research & Science Competitions
+        </label>
+
+        <label>
+            <input type="checkbox" name="academic interest[]" value="University Preparation & Scholarships">
+            University Preparation & Scholarships
+        </label>
+
+        <label>
+            <input type="checkbox" name="academic interest[]" value="Other">
+            Other
+        </label>
+
+        <input type="text" name="other academic interest" placeholder="If others, please specify.">
+
+        <!-- SECTION 3 -->
+        <h3>Section 3 — Motivation</h3>
+
+        <label for="motivation-join">1. Why do you want to join SANARE Mentoring?</label>
+        <textarea name="Join Motivation" rows="5" required></textarea>
+
+        <label for="motivation-learn">2. What do you hope to learn from this program?</label>
+        <textarea name="Learning Goal" rows="5" required></textarea>
+
+        <label for="motivation-goal">3. What is your current academic or career goal?</label>
+        <textarea name="Academic / Career Goal" rows="5" required></textarea>
+
+        <!-- SECTION 4 -->
+        <h3>Section 4 — Experience (Optional)</h3>
+
+        <label>Have you joined any competitions, research projects, organizations, or health-related activities? 
+            If yes, briefly describe them.</label>
+        <textarea name="Experience" rows="5" placeholder="Tell us about your experiences."></textarea>
+
+        <!-- SECTION 5 -->
+        <h3>Section 5 — Availability</h3>
+
+        <label>TBA</label>
+        <textarea name="Proposed Collaboration" rows="5" placeholder="Describe your partnership idea and collaboration plan."></textarea>
+
+        <!-- SECTION 6 -->
+        <h3>Section 6 — Expectations</h3>
+
+        <label>What topic would you most like to explore with a mentor?</label>
+
+        <label>
+            <input type="radio" name="Mentor Topic" value="Choosing a major" required>
+            Choosing a major
+        </label>
+
+        <label>
+            <input type="radio" name="Mentor Topic" value="Research projects">
+            Research projects
+        </label>
+
+        <label>
+            <input type="radio" name="Mentor Topic" value="Science competitions">
+            Science competitions
+        </label>
+
+        <label>
+            <input type="radio" name="Mentor Topic" value="Study strategies">
+            Study strategies
+        </label>
+
+        <label>
+            <input type="radio" name="Mentor Topic" value="Scholarship preparation">
+            Scholarship preparation
+        </label>
+
+        <label>
+            <input type="radio" name="Mentor Topic" value="Career in health fields">
+            Career in health fields
+        </label>
+
+        <label>
+            <input type="radio" name="Mentor Topic" value="Leadership & organizations">
+            Leadership & organizations
+        </label>
+
+        <label>
+            <input type="radio" name="Mentor Topic" value="Other">
+            Other
+        </label>
+
+        <input type="text" name="other academic interest" placeholder="If others, please specify.">
+
+        <!-- SECTION 7 -->
+        <h3>Section 7 — Commitment</h3>
+
+        <label>
+            <input type="checkbox" name="Commitment Educational" value="Agreed" required>
+            I understand that mentoring sessions are educational and not medical consultations.
+        </label>
+
+        <label>
+            <input type="checkbox" name="Commitment Communication" value="Agreed" required>
+            I will attend sessions punctually and communicate if I cannot attend.
+        </label>
+
+        <label>
+            <input type="checkbox" name="Commitment Polite" value="Agreed" required>
+            I will participate respectfully and actively during the mentoring program.
+        </label>
+
+        <label>
+            <input type="checkbox" name="Commitment Participation" value="Agreed" required>
+            I understand that repeated absence without notice may affect my participation in future SANARE programs.
+        </label>
+
+        <!-- SECTION 8 -->
+        <h3>Section 8 — Additional Information</h3>
+
+        <label for="additional-info">Is there anything else you'd like SANARE to know?</label>
+        <textarea id="additional-info" name="Additional Information" rows="5" placeholder="Share any additional information here..."></textarea>
+
+        <button type="submit">Submit Partnership</button>
+
+    </form>
+
+    <p>
+        Thank you for registering for SANARE Mentoring. We look forward 
+        to supporting your journey! 💙
+    </p>
+</section>
+
+<script src="../assets/js/script.js"></script>
+<footer>
+    <h3>Sanare Veritas</h3>
+    <p>Email: sanareveritas@gmail.com</p>
+    <p>Instagram: @sanareveritas.id</p>
+</footer>
+
+</body>
+</html>
